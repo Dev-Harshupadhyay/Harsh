@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HARSH — Full-Stack Developer & Automation Engineer</title>
+<meta name="description" content="HARSH — BCA 3rd Semester full-stack developer specializing in web development, automation and scripting.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<canvas id="particle-canvas"></canvas>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#hero" class="logo">HARSH<span>.dev</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#stack">Tech Stack</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero" class="hero">
+  <div class="hero-glow glow-cyan"></div>
+  <div class="hero-glow glow-violet"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">👋 Hello, I'm</p>
+    <h1 class="hero-title">HARSH</h1>
+    <p class="hero-subtitle">BCA 3rd Semester • Full-Stack Developer &amp; Automation Engineer</p>
+    <p class="hero-desc">I build web platforms, automation bots, and everyday tools — designed clean,
+      shipped live, and built to actually work under real use.</p>
+    <a href="#projects" class="btn-glow">
+      <span>Explore Projects</span>
+      <i class="fas fa-arrow-right"></i>
+    </a>
+  </div>
+  <div class="scroll-cue"><span></span></div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section reveal">
+  <p class="section-eyebrow">Who I Am</p>
+  <h2 class="section-title">About Me</h2>
+
+  <div class="about-grid">
+    <div class="about-visual">
+      <div class="avatar-ring">
+        <div class="avatar-core">H</div>
+      </div>
+      <div class="badge-grid">
+        <span class="mini-badge">JS</span>
+        <span class="mini-badge">PY</span>
+        <span class="mini-badge">PHP</span>
+        <span class="mini-badge">GIT</span>
+      </div>
+    </div>
+
+    <div class="about-copy">
+      <p>I'm an 18-year-old BCA 3rd semester student, focused on building scalable automation
+        tools, custom web utilities, and high-performance applications. I care less about demos
+        and more about things that stay running — real databases, real APIs, real users.</p>
+      <p>Most of what I build ends up deployed somewhere public within days, not months.</p>
+
+      <div class="metrics-row">
+        <div class="metric-card">
+          <span class="metric-number" data-target="10" data-suffix="+">0</span>
+          <span class="metric-label">Live Deployments</span>
+        </div>
+        <div class="metric-card">
+          <span class="metric-number" data-target="5" data-suffix="+">0</span>
+          <span class="metric-label">Automation Bots</span>
+        </div>
+        <div class="metric-card">
+          <span class="metric-number" data-target="3" data-suffix="rd">0</span>
+          <span class="metric-label">Semester (BCA)</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TECH STACK -->
+<section id="stack" class="section reveal">
+  <p class="section-eyebrow">Toolbox</p>
+  <h2 class="section-title">Tech Stack</h2>
+
+  <div class="stack-columns">
+    <div class="stack-category glass-card">
+      <h3><i class="fas fa-code"></i> Frontend</h3>
+      <div class="stack-chips">
+        <span class="chip">HTML5</span>
+        <span class="chip">CSS3</span>
+        <span class="chip">JavaScript (ES6)</span>
+      </div>
+    </div>
+    <div class="stack-category glass-card">
+      <h3><i class="fas fa-server"></i> Backend / Scripting</h3>
+      <div class="stack-chips">
+        <span class="chip">Python</span>
+        <span class="chip">PHP</span>
+        <span class="chip">Bash</span>
+      </div>
+    </div>
+    <div class="stack-category glass-card">
+      <h3><i class="fas fa-tools"></i> Tools</h3>
+      <div class="stack-chips">
+        <span class="chip">Git</span>
+        <span class="chip">GitHub</span>
+        <span class="chip">Termux</span>
+        <span class="chip">Linux</span>
+        <span class="chip">Render</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section reveal">
+  <p class="section-eyebrow">Featured Work</p>
+  <h2 class="section-title">Projects</h2>
+
+  <div class="projects-grid">
+
+    <article class="tilt-card glass-card">
+      <div class="tilt-inner">
+        <div class="card-top">
+          <span class="project-tag">Full-Stack</span>
+        </div>
+        <h3>Cinenvood</h3>
+        <p>A full-stack movie review &amp; discovery platform with real-time search, ratings and
+          reviews, backed by a persistent database and REST API.</p>
+        <div class="tech-badges">
+          <span>REST API</span><span>Database</span><span>Full-Stack</span>
+        </div>
+        <div class="card-actions">
+          <a href="https://cinenvood.onrender.com/" target="_blank" rel="noopener" class="btn-magnetic" data-magnetic>
+            <span>Launch Live Demo</span>
+            <i class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <article class="tilt-card glass-card">
+      <div class="tilt-inner">
+        <div class="card-top">
+          <span class="project-tag">Web Utility</span>
+        </div>
+        <h3>Tarazu</h3>
+        <p>An offline-ready toolkit for shopkeepers &amp; merchants — instant weight, EMI, SIP and
+          profit/loss calculators, built mobile-first with zero signup and zero ads.</p>
+        <div class="tech-badges">
+          <span>JavaScript</span><span>Offline-First</span><span>Mobile-First</span>
+        </div>
+        <div class="card-actions">
+          <a href="https://tarzau.netlify.app/" target="_blank" rel="noopener" class="link-btn">
+            <span>Launch Live Demo</span>
+            <i class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <article class="tilt-card glass-card">
+      <div class="tilt-inner">
+        <div class="card-top">
+          <span class="project-tag">Community</span>
+        </div>
+        <h3>Telegram Ecosystem</h3>
+        <p>Harsh Servers — a growing Telegram community and bot ecosystem, hosting resources,
+          tools and giveaways for a tech-focused audience.</p>
+        <div class="tech-badges">
+          <span>Telegram API</span><span>Automation</span><span>Community</span>
+        </div>
+        <div class="card-actions">
+          <a href="https://t.me/+DvSgQwffeiwxMzg1" target="_blank" rel="noopener" class="link-btn">
+            <span>Join Channel</span>
+            <i class="fab fa-telegram"></i>
+          </a>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="section reveal">
+  <p class="section-eyebrow">Journey So Far</p>
+  <h2 class="section-title">Experience</h2>
+
+  <div class="timeline">
+    <div class="timeline-item">
+      <span class="timeline-dot"></span>
+      <div class="timeline-content glass-card">
+        <span class="timeline-tag">Ongoing</span>
+        <h3>BCA — 3rd Semester</h3>
+        <p>Coursework in programming, data structures and web technologies, applied directly to
+          shipped side-projects rather than left as classroom exercises.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <span class="timeline-dot"></span>
+      <div class="timeline-content glass-card">
+        <span class="timeline-tag">Self-Directed</span>
+        <h3>Independent Developer</h3>
+        <p>Designed, built and deployed full-stack apps, automation scripts and Telegram bots —
+          learning by shipping live products, not just tutorials.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section reveal">
+  <p class="section-eyebrow">Let's Talk</p>
+  <h2 class="section-title">Contact</h2>
+
+  <div class="contact-grid">
+    <form class="contact-form glass-card" id="contactForm">
+      <label>
+        Name
+        <input type="text" name="name" placeholder="Your name" required>
+      </label>
+      <label>
+        Email
+        <input type="email" name="email" placeholder="you@example.com" required>
+      </label>
+      <label>
+        Message
+        <textarea name="message" rows="4" placeholder="What are you building?" required></textarea>
+      </label>
+      <button type="submit" class="btn-glow full-width">
+        <span>Send Message</span>
+        <i class="fas fa-paper-plane"></i>
+      </button>
+    </form>
+
+    <div class="contact-links">
+      <a href="mailto:harsh48227@gmail.com" class="contact-icon-card">
+        <i class="fas fa-envelope"></i>
+        <span>harsh48227@gmail.com</span>
+      </a>
+      <a href="https://t.me/pmharsh" target="_blank" rel="noopener" class="contact-icon-card icon-only" aria-label="Telegram: @pmharsh">
+        <i class="fab fa-telegram"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>© 2026 HARSH. Built with Precision &amp; Code.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+  </html>

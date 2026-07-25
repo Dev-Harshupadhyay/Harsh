@@ -116,10 +116,14 @@
 
   navToggle.addEventListener('click', () => {
     navLinks.classList.toggle('open');
+    navToggle.classList.toggle('active');
   });
 
   document.querySelectorAll('.nav-links a').forEach(link => {
-    link.addEventListener('click', () => navLinks.classList.remove('open'));
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      navToggle.classList.remove('active');
+    });
   });
 })();
 
@@ -242,4 +246,3 @@
     window.location.href = `mailto:harsh48227@gmail.com?subject=${subject}&body=${body}`;
   });
 })();
-    

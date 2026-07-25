@@ -66,6 +66,40 @@
   closeBtn.addEventListener('click', hideNotice);
 })();
 
+/* ============ COOL BUTTON: magnetic pull + ripple ============ */
+/* Applies to every .project-link automatically — new projects added later
+   with the same class in index.html get this effect with zero extra JS/CSS. */
+(function () {
+  const PULL = 0.3;
+
+  document.querySelectorAll('.project-link').forEach(btn => {
+    btn.addEventListener('mousemove', (e) => {
+      const rect = btn.getBoundingClientRect();
+      const relX = e.clientX - rect.left;
+      const relY = e.clientY - rect.top;
+      const offsetX = (relX - rect.width / 2) * PULL;
+      const offsetY = (relY - rect.height / 2) * PULL;
+      btn.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
+    });
+
+    btn.addEventListener('mouseleave', () => {
+      btn.style.transform = 'translate(0, 0)';
+    });
+
+    btn.addEventListener('click', (e) => {
+      const rect = btn.getBoundingClientRect();
+      const ripple = document.createElement('span');
+      const size = Math.max(rect.width, rect.height);
+      ripple.className = 'ripple';
+      ripple.style.width = ripple.style.height = `${size}px`;
+      ripple.style.left = `${e.clientX - rect.left - size / 2}px`;
+      ripple.style.top = `${e.clientY - rect.top - size / 2}px`;
+      btn.appendChild(ripple);
+      setTimeout(() => ripple.remove(), 600);
+    });
+  });
+})();
+
 /* ============ TOAST ON LIVE-DEMO LINKS ============ */
 (function () {
   const toast = document.getElementById('toast');
